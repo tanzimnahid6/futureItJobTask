@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Future It</title>
+
+  <style>
+    /* Add your CSS styles here */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Nav bar -->
+    <nav>
+      <div>
+        <img class="logo" src="./image/logo.png" alt="" />
+      </div>
+      <div>
+        <button class="button-26" role="button">Login</button>
+      </div>
+    </nav>
+
+
+    <!-- Tab content section -->
+    <div class="tab-content">
+      <!-- Tab 1 content -->
+      <div id="tab1" class="tab-pane">
+        <div class="slider item">
+            <div class="text-section">
+              <p class="sub-headline">Simple centered-Designed</p>
+              <h2 class="headline">
+                <span class="make">We make</span> apps, <br />
+                Website & Brands
+              </h2>
+            </div>
+            <div class="img-section">
+              <img class="img" src="./image/image1.png" alt="" />
+            </div>
+          </div>
+      </div>
+
+      <!-- Tab 2 content -->
+      <div id="tab2" class="tab-pane">
+        <div class="slider item">
+            <div class="text-section">
+              <p class="sub-headline">Simple  centered-Designed</p>
+              <h2 class="headline">
+                <span class="make">We make</span> Website <br />
+                alive
+              </h2>
+            </div>
+            <div class="img-section">
+              <img class="img" src="./image/image2.png" alt="" />
+            </div>
+          </div>
+      </div>
+
+        <!-- Tab 2 content -->
+        <div id="tab3" class="tab-pane">
+            <div class="slider item">
+                <div class="text-section">
+                  <p class="sub-headline">Simple  centered-Designed</p>
+                  <h2 class="headline">
+                    <span class="make">We make</span> apps , <br />
+                    Website & Brands
+                  </h2>
+                </div>
+                <div class="img-section">
+                  <img class="img" src="./image/image3.png" alt="" />
+                </div>
+              </div>
+          </div>
+
+            <!-- Tab 2 content -->
+      <div id="tab4" class="tab-pane">
+        <div class="slider item">
+            <div class="text-section">
+              <p class="sub-headline">Simple  centered-Designed</p>
+              <h2 class="headline">
+                We make <span class="make">brand </span> <br> Service
+              </h2>
+            </div>
+            <div class="img-section">
+              <img class="img" src="./image/image4.png" alt="" />
+            </div>
+          </div>
+      </div>
+        <!-- Tab 2 content -->
+        <div id="tab5" class="tab-pane">
+            <div class="slider item">
+                <div class="text-section">
+                  <p class="sub-headline">5 Simple centered-Designed</p>
+                  <h2 class="headline">
+                Everything depend  on,
+                <span class="make">  UI/UX</span>
+                   
+                  </h2>
+                </div>
+                <div class="img-section">
+                  <img class="img" src="./image/image5.png" alt="" />
+                </div>
+              </div>
+          </div>
+      <!-- Add more divs for additional tabs if needed -->
+    </div>
+    <section>
+        <div class="icon-container">
+          <div data-tab="tab1" class="hexagon tab-button">
+            <div class="box">
+              <img class="box-icon" src="./image/icone/icone1.svg" alt="" />
+              <h1>Graphics</h1>
+            </div>
+          </div>
+          <div data-tab="tab2" class="hexagon tab-button">
+            <div class="box">
+              <img class="box-icon" src="./image/icone/icone2.svg" alt="" />
+              <h1 class="icon-title">Web Design</h1>
+            </div>
+          </div>
+          <div data-tab="tab3" class="hexagon tab-button">
+            <div class="box">
+              <img class="box-icon" src="./image/icone/icone3.svg" alt="" />
+              <h1>Web Development</h1>
+            </div>
+          </div>
+          <div data-tab="tab4" class="hexagon tab-button">
+            <div class="box">
+              <img class="box-icon" src="./image/icone/icone4.svg" alt="" />
+              <h1>Digital Marketing</h1>
+            </div>
+          </div>
+          <div data-tab="tab5" class="hexagon tab-button">
+            <div class="box">
+              <img class="box-icon" src="./image/icone/icone5.svg" alt="" />
+              <h1>UI/UX</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Script for the tab functionality -->
+  <script>
+    $(document).ready(function() {
+      // Hide all tab content initially except for the first one
+      $(".tab-pane:not(:first)").hide();
+
+      // Handle tab button click event
+      $(".tab-button").click(function() {
+        // Get the data-tab attribute value from the clicked button
+        var tabId = $(this).data("tab");
+
+        // Hide all tab content and show the one corresponding to the clicked button
+        $(".tab-pane").hide();
+        $("#" + tabId).show();
+      });
+    });
+  </script>
+</body>
+</html>

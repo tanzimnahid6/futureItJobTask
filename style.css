@@ -1,0 +1,163 @@
+
+body{
+    background-color: #F2F8FF;
+}
+.container {
+  width: 1240px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  scale: 80%;
+}
+
+/* CSS */
+.button-26 {
+  appearance: button;
+  background-color: #1652f0;
+  border: 1px solid #1652f0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Graphik, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+}
+
+.button-26:disabled {
+  opacity: 0.5;
+}
+
+.button-26:focus {
+  outline: 0;
+}
+
+.button-26:hover {
+  background-color: #0a46e4;
+  border-color: #0a46e4;
+}
+
+.button-26:active {
+  background-color: #0039d7;
+  border-color: #0039d7;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 100px;
+}
+.text-section {
+  width: 50%;
+}
+.img-section {
+  width: 50%;
+}
+.headline {
+  font-size: 63px;
+  margin: 0px;
+}
+.make {
+  color: #4c73e9;
+}
+.sub-headline {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.img {
+  width: 100%;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ============================ */
+.hexagon {
+    position: relative;
+    cursor: pointer;
+    width: 190px;
+    height: 109.70px;
+    margin: 54.85px 0;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 134.35px;
+    height: 134.35px;
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 17.8249px;
+  }
+  
+  .hexagon:before {
+    top: -67.1751px;
+    left: 14%;
+  }
+  
+  .hexagon:after {
+    bottom: -67.1751px;
+    left: 14%;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  .box {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+
+
+  
+  .icon-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  /* Add hover styles for the hexagon to show the border on hover */
+  .hexagon:hover {
+    border-left: solid 2px #4c73e9;
+    border-right: solid 2px #4c73e9;
+
+  }
+  
+  .hexagon:hover:before {
+    border-top: solid 2px #4c73e9;
+    border-right: solid 2px #4c73e9;
+
+  }
+  
+  .hexagon:hover:after {
+    border-bottom: solid 2px #4c73e9;
+    border-left: solid 2px #4c73e9;
+  }
+  
